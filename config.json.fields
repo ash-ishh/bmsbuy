@@ -1,14 +1,19 @@
 {
     "urls": {
-        "login": "https://in.bookmyshow.com/mumbai"
+        "login": "https://in.bookmyshow.com/mumbai",
+        "target_url": "https://in.bookmyshow.com/mumbai/movies/kalank/ET00074273",
+        "target_url": "https://in.bookmyshow.com/movies/avengers-endgame/ET00090482"
     },
     "buttons": {
-        "signin": "preSignIn",
-        "login-class": "submit-form"
+        "signin_id": "preSignIn",
+        "login_id": "loginIntiate",
+        "personalized_profile_cancel_id": "wzrk-cancel",
+        "update_popup_cancel_class": "wzrkClose",
+        "book_tickets_link_text": "BOOK TICKETS"
     },
     "forms": {
-        "email": "iUserName",
-        "password": "iPwd"
+        "email_id": "iUserName",
+        "password_id": "iPwd"
     },
     "credentials": {
         "email": "",

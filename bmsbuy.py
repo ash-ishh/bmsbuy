@@ -90,9 +90,6 @@ def main():
         # pop up not found
         pass
 
-    with open("/tmp/bms.html","w") as w:
-        w.write(driver.page_source)
-
     time.sleep(0.5)
 
     book_tickets_button= get_book_tickets_button(driver)
