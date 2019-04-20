@@ -1,4 +1,9 @@
+__pycache__
+__pychache__/*
+*/__pychache__/*
 config.json
 *.json
 .vscode/*
 .vscode
+venv/*
+vnev
