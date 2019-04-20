@@ -1,0 +1,17 @@
+{
+    "urls": {
+        "login": "https://in.bookmyshow.com/mumbai"
+    },
+    "buttons": {
+        "signin": "preSignIn",
+        "login-class": "submit-form"
+    },
+    "forms": {
+        "email": "iUserName",
+        "password": "iPwd"
+    },
+    "credentials": {
+        "email": "",
+        "password": ""
+    }
+}
