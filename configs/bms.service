@@ -1,0 +1,7 @@
+[Unit]
+Description=Trigger bmsbuy
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/user/bmsbuy-project/bmsbuy
+ExecStart=/home/user/bmsbuy-project/venv/bin/python /home/user/bmsbuy-project/bmsbuy/bmsbuy.py

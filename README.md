@@ -1,3 +1,9 @@
+# bmsbuy
+
+It is selenium based script to check for availability of tickets and venues on bookmyshow.
+It was orignally created for Avengers Endgame but it is written in generic way to later change it for any other service.
+Systemd/Timer is used to trigger script every 20 minutes.
+
 ## Steps : 
 
 #### 1 - Create and activate virtual envirnoment
@@ -12,7 +18,10 @@ source venv/bin/activate
 
 #### 3 - Copy chromedriver to /usr/bin/ or add project root to path variable
 
-#### 4 - Copy config.json.fields to config.json and add your bms credentials
+#### 4 - Copy configs/config.json to root of project and add your bms credentials
 
-#### 5 - run script with
-`python bmsbuy.py`
+#### 5 - Copy bms.service bms.timer to /etc/systemd/system/
+
+#### 6 - Start the timer by
+
+`sudo systemctl start bms.timer`

@@ -9,3 +9,4 @@ config.json
 .vscode
 venv/*
 vnev
+bmsbuy.log

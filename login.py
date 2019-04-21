@@ -1,5 +1,5 @@
 import time
-from helpers import get_elements
+from helpers import get_element
 
 class Login():
     """
@@ -35,24 +35,28 @@ class Login():
         time.sleep(0.2)
 
         # Click sigin button
-        sigin_button = get_elements(driver,selector="id",value=self.sign_in_button_id)
+        sigin_button = get_element(driver,selector="id",value=self.sign_in_button_id)
 
         # Check if ther is get personalized info pop up click cancle if it is there 
-        personalized_profile_cancel_button = get_elements(driver,selector="id",value=self.personalized_profile_cancel_id)
-        personalized_profile_cancel_button.click()
+        try:
+            personalized_profile_cancel_button = get_element(driver,selector="id",value=self.personalized_profile_cancel_id)
+            personalized_profile_cancel_button.click()
+        except RuntimeError:
+            # Ignore if not available
+            pass
 
         sigin_button.click()
 
         # Enter email address
-        email_form = get_elements(driver,selector="id",value=self.email_form_id)
+        email_form = get_element(driver,selector="id",value=self.email_form_id)
         email_form.send_keys(self.email)
 
         # Enter password
-        password_form = get_elements(driver,selector="id",value=self.password_form_id)
+        password_form = get_element(driver,selector="id",value=self.password_form_id)
         password_form.send_keys(self.password)
 
         # Click Login button
-        loggin_button = get_elements(driver,selector="id",value=self.login_button_id)
+        loggin_button = get_element(driver,selector="id",value=self.login_button_id)
         loggin_button.click()
 
         time.sleep(1)

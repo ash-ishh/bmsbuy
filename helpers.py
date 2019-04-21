@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 
-def get_elements(driver, selector, value):
+def get_element(driver, selector, value):
     """
     Returns the elements of driver with given value and selector.
     Args:
